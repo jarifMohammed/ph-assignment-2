@@ -1,0 +1,82 @@
+.calculator {
+  margin-bottom: 100px;
+}
+
+.calculator .wrapper {
+  background: #222222;
+}
+.calculator .wrapper .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 3rem 10px;
+}
+.calculator .head-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+}
+.calculator table {
+  border-collapse: collapse;
+}
+.calculator .chart h2 {
+  margin-bottom: 3rem;
+}
+.calculator table td,
+.calculator table th {
+  border: 1px solid var(--text-secondary);
+  padding: 10px;
+  text-align: left;
+}
+.calculator table td {
+  color: var(--text-secondary);
+}
+
+.calculator .calculate {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 560px;
+}
+
+.calculator .form {
+  display: flex;
+  flex-direction: column;
+}
+.calculator .form .row {
+  display: flex;
+}
+.calculator .form .row input,
+select {
+  width: 100%;
+  background: #393939;
+  border: 0;
+  outline: 0;
+  padding: 14px 10px;
+  margin: 5px;
+  border-radius: 8px;
+}
+input::placeholder,
+select {
+  color: rgba(255, 255, 255, 0.7);
+}
+.calculator .form .btn {
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 992px) {
+  .calculator > .container {
+    padding: 0 0.7rem;
+  }
+  .calculator .wrapper .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 2.6rem 1.3rem;
+  }
+  .calculator .calculate {
+    width: 100%;
+    max-width: 100%;
+  }
+}

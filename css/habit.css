@@ -1,0 +1,56 @@
+.change-habit {
+  text-align: center;
+  margin: 100px auto;
+}
+.change-habit .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.6rem;
+  padding: 0 10px;
+}
+.change-habit .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.change-habit .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.change-habit .card .card-img {
+  width: 150px;
+}
+.change-habit .card .card-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.change-habit .card .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+.change-habit .card-content h3 {
+}
+.change-habit .card-content p {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  padding: 0 40px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .change-habit .cards {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .change-habit .cards {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
+}

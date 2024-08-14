@@ -1,0 +1,50 @@
+.extra-mile {
+  margin-bottom: 100px;
+  padding: 0 10px;
+}
+.extra-mile .container {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222222;
+  border-radius: 1rem;
+}
+.extra-mile .left {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  justify-content: start;
+  align-items: start;
+}
+.extra-mile .left h1 {
+  font-size: 3rem;
+}
+.extra-mile .left p {
+  color: var(--text-secondary);
+}
+.extra-mile .left button {
+  padding: 12px 47px;
+}
+.extra-mile .right .img {
+  max-width: 400px;
+  height: 100%;
+}
+.extra-mile .right .img img {
+  width: 100%;
+  border-radius: 1rem;
+  /* transform-origin: scale(2); */
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+}
+@media only screen and (max-width: 576px) {
+  .extra-mile .container {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .extra-mile .left .btn {
+    width: 100%;
+  }
+}

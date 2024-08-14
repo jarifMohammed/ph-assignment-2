@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-primary: #fff;
+  --text-secondary: rgba(255, 255, 255, 0.5);
+  --accent: #e6533c;
+  --bg: #222222;
+}
+
+body {
+  background: #000;
+  color: var(--text-primary);
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.7rem;
+}
+.section-subtitle {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.8rem;
+}
+.head {
+  max-width: 600px;
+}
+button {
+  transition: all 0.5s linear;
+}
+button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn-primary {
+  background: var(--accent);
+  padding: 12px 41px;
+  border: 0;
+  outline: 0;
+  border-radius: 30px;
+  color: var(--text-primary);
+}
+
+button,
+li,
+a,
+i {
+  cursor: pointer;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+}

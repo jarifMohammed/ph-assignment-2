@@ -1,0 +1,84 @@
+/* Container for pricing cards */
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Space between cards */
+  justify-content: center; /* Center cards */
+  padding: 1rem;
+}
+
+/* Individual card styling */
+.pricing__card {
+  background: black;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 20rem; /* Card width */
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing__card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Card title */
+.pricing__title {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+/* Card price */
+.pricing__price {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.pricing__price span {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Card features */
+.pricing__features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+}
+
+.pricing__features li {
+  margin: 0.5rem 0;
+}
+
+/* Card button */
+.pricing__button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.pricing__button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing__card {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}

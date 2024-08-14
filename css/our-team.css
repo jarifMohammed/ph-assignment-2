@@ -1,0 +1,76 @@
+.team .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #222222;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+.team .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  padding: 0 1rem;
+}
+.team .head {
+  text-align: center;
+}
+.team .card1 {
+  background: linear-gradient(to bottom, transparent, black),
+    url("../images/trainer1.jpg");
+}
+.team .card2 {
+  background: linear-gradient(to bottom, transparent, black),
+    url("../images/trainer2.jpg");
+}
+.team .card3 {
+  background: linear-gradient(to bottom, transparent, black),
+    url("../images/trainer3.jpg");
+}
+.team .card4 {
+  background: linear-gradient(to bottom, transparent, black),
+    url("../images/trainer4.jpg");
+}
+.team .card5 {
+  background: linear-gradient(to bottom, transparent, black),
+    url("../images/trainer5.jpg");
+}
+.team .card6 {
+  background: linear-gradient(to bottom, transparent, black),
+    url("../images/trainer6.jpg");
+}
+.team .card {
+  width: 100%;
+  height: 260px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.team .card p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+.team .card h2 {
+  margin: 6px 0;
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .team .cards {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team .card3,
+  .team .card4 {
+    display: none;
+  }
+}
